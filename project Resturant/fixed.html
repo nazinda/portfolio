@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Plates</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        /* --- Fixed Navigation & Base Styles --- */
+        * { box-sizing: border-box; }
+        body {
+            scroll-behavior: smooth;
+            margin: 0;
+            transition: background-color 0.3s, color 0.3s;
+            overflow-x: hidden;
+            font-family: sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        header img { width: 120px; height: auto; }
+        header p {
+            color: black;
+            font-size: 30px;
+            font-family: 'Tangerine', serif;
+            font-weight: bolder;
+            margin-right: auto;
+        }
+        .nav-links { display: flex; align-items: center; gap: 20px; }
+        .head {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bolder;
+        }
+        .head:hover { color: red; }
+
+        /* --- Main Hero --- */
+        #mainSection {
+            background-image: url('background1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+        }
+        #welcome {
+            color: white;
+            font-size: clamp(40px, 10vw, 100px);
+            text-shadow: 2px 2px 5px #000;
+        }
+        #name {
+            color: white;
+            font-size: clamp(30px, 8vw, 70px);
+            font-family: 'Tangerine', serif;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        /* --- Sections Logic --- */
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+        }
+        h1#recipetxt, .lunch {
+            width: 100%;
+            text-align: center;
+            color: brown;
+        }
+
+        /* Card Styles - Exact Original Sizes */
+        .card-large { width: 600px; min-height: 600px; border: 1px solid #ddd; padding: 10px; }
+        .card-small { width: 300px; min-height: 600px; border: 1px solid #ddd; padding: 10px; }
+        .card-medium { width: 400px; min-height: 370px; border: 1px solid #ddd; padding: 10px; }
+        
+        .img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s;
+            display: block;
+        }
+        .img:hover {
+            transform: scale(0.85);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .name { padding-left: 10px; font-size: 24px; }
+        .price { color: brown; padding-left: 10px; font-weight: bold; }
+        .price-align-right { text-align: right; color: brown; font-weight: bold; font-size: 20px; padding: 10px; }
+
+        /* --- Delivery & Footer --- */
+        #comings {
+            background-color: rgb(173, 72, 72);
+            padding: 50px;
+            text-align: center;
+            color: white;
+        }
+        #comings img { width: 200px; }
+        
+        #foot {
+            background-color: black;
+            color: white;
+            padding: 40px;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 768px) {
+            header { height: auto; flex-direction: column; padding: 10px; }
+            header p { margin: 10px 0; }
+            .nav-links { flex-wrap: wrap; justify-content: center; }
+            .card-large, .card-small, .card-medium { width: 100% !important; height: auto !important; }
+        }
+
+        /* Dark Mode Switch */
+        .switch { width: 50px; height: 25px; background: #ccc; border-radius: 20px; position: relative; cursor: pointer; }
+        .circle { width: 21px; height: 21px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: 0.3s; }
+        .switch.active { background: lightpink; }
+        .switch.active .circle { transform: translateX(25px); }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo-removebg-preview.png">
+    <p>Pretty Plates</p>
+    <div class="nav-links">
+        <a href="#mainSection" class="head">Home</a>
+        <a href="#ourrecipes" class="head">Menu</a>
+        <a href="factsandfigures.html" class="head">FAQs</a>
+        <a href="#foot" class="head">About</a>
+        <div class="switch" onclick="toggleMode()"><div class="circle"></div></div>
+    </div>
+</header>
+
+<section id="mainSection">
+    <h1 id="welcome">WELCOME TO</h1>
+    <p id="name">PRETTY PLATES</p>
+</section>
+
+<h1 id="recipetxt" style="margin-top: 50px;">Meal Offerings</h1>
+<h1 class="lunch">Lunch</h1>
+<section id="ourrecipes" class="menu-container">
+    <div class="card-large" id="pizzaparata">
+        <img src="pizzaparatha.jpg" class="img">
+        <h1 class="name">Pizza Paratha</h1>
+        <p style="padding: 10px;">A delicious fusion of cheesy goodness and flaky perfection, this dish combines the richness of savory flavors with a crispy, golden crust.</p>
+        <p class="price-align-right">Rs 280</p>
+    </div>
+    <div class="card-small" id="biryani">
+        <img src="biryani.jpg" class="img">
+        <h1 class="name">Spicy Biryani</h1>
+        <p class="price">Rs 250</p>
+        <img src="chickenkarahi.jpg" class="img">
+        <h1 class="name">Karahi</h1>
+        <ul style="padding-left: 30px;">
+            <li>Chicken: Rs 220</li>
+            <li>Mutton: Rs 280</li>
+        </ul>
+    </div>
+    <div class="card-small" id="chaat">
+        <img src="daal.webp" class="img">
+        <h1 class="name">Daal Chawal</h1>
+        <p class="price">Rs 150</p>
+        <img src="pasta.jpg" class="img">
+        <h1 class="name">Pasta</h1>
+        <p class="price">Rs 250 - 300</p>
+    </div>
+</section>
+
+<h1 class="lunch">Breakfast</h1>
+<section id="breakfast" class="menu-container">
+    <div class="card-large" id="paratha">
+        <img src="parata.webp" class="img">
+        <h1 class="name">Paratha</h1>
+        <p style="padding: 10px;">Begin your day with the comforting warmth of a freshly made, flaky paratha.</p>
+        <p class="price-align-right">Rs 60</p>
+    </div>
+    <div class="card-small" id="chai">
+        <img src="chai.jpg" class="img">
+        <h1 class="name">Chai</h1>
+        <p class="price">Rs 50</p>
+        <img src="omlette.jpg" class="img">
+        <h1 class="name">Omelette</h1>
+        <p class="price">Rs 60 - 120</p>
+    </div>
+</section>
+
+<h1 class="lunch">Snacks</h1>
+<section id="snacks" class="menu-container">
+    <div class="card-large" id="fries">
+        <img src="fries.jpg" class="img">
+        <h1 class="name">Fries</h1>
+        <p style="padding: 10px;">Crispy, golden fries seasoned to perfection for the ultimate snack experience.</p>
+        <p class="price-align-right">Rs 150</p>
+    </div>
+    <div class="card-small" id="samosa">
+        <img src="samosa.jpg" class="img">
+        <h1 class="name">Samosa</h1>
+        <p class="price">Rs 40</p>
+        <img src="russian.jpg" class="img">
+        <h1 class="name">Russian Salad</h1>
+        <p class="price">Rs 200</p>
+    </div>
+</section>
+
+<h1 class="lunch">Beverages</h1>
+<section id="beverages" class="menu-container">
+    <div class="card-medium" id="mint">
+        <img src="mint.jpg" class="img">
+        <h1 class="name">Mint Margarita</h1>
+        <p class="price">Rs 180</p>
+    </div>
+    <div class="card-medium" id="lassi">
+        <img src="lassi.jpg" class="img">
+        <h1 class="name">Lassi</h1>
+        <p class="price">Rs 120</p>
+    </div>
+    <div class="card-medium" id="soft">
+        <img src="soft.jpg" class="img">
+        <h1 class="name">Soft Drinks</h1>
+        <p class="price">Rs 80</p>
+    </div>
+</section>
+
+<section id="comings">
+    <h1>COMING SOON!</h1>
+    <img src="delieveryd-removebg-preview.png">
+</section>
+
+<footer id="foot">
+    <h1>About Us</h1>
+    <p>We believe that great food should be both delicious and visually captivating.</p>
+    <p>Contact: +923123765430 | prettyplates@gmail.com</p>
+    <p style="text-align:center; margin-top:20px;">&copy; 2024 PrettyPlates</p>
+</footer>
+
+<script>
+    function toggleMode() {
+        const body = document.body;
+        const header = document.querySelector('header');
+        const headerText = document.querySelector('header p');
+        const links = document.querySelectorAll('.head');
+        const sw = document.querySelector('.switch');
+        
+        sw.classList.toggle('active');
+        if (sw.classList.contains('active')) {
+            body.style.backgroundColor = 'black';
+            body.style.color = 'white';
+            header.style.backgroundColor = '#222';
+            headerText.style.color = 'white';
+            links.forEach(l => l.style.color = 'white');
+        } else {
+            body.style.backgroundColor = 'white';
+            body.style.color = 'black';
+            header.style.backgroundColor = 'white';
+            headerText.style.color = 'black';
+            links.forEach(l => l.style.color = 'black');
+        }
+    }
+</script>
+</body>
+</html>

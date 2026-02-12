@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa website clone</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            width: 100%;
+            height: 10vh;
+            z-index: 3;
+            top: 0;
+        }
+
+        header a {
+            color: black;
+            text-decoration: none;
+           
+            font-size: 15px;
+        }
+
+        .villa {
+            font-size: xx-large;
+            font-weight: bold;
+            padding-top: 23px;
+            padding-left: 60px;
+            float: left;
+            color: black;
+
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        #home {
+            float: left;
+            padding-top: 40px;
+            margin-left: 500px;
+        }
+
+        #pro {
+            float: left;
+            margin-left: 60px;
+            padding-top: 40px;
+        }
+
+        #proD {
+            margin-left: 60px;
+            
+            float: left;
+            padding-top: 40px;
+        }
+
+        #contact {
+            margin-left: 60px;
+            padding-top: 40px;
+            float: left;
+        }
+
+        .visit {
+            color: white;
+            width: 140px;
+            height: 30px;
+            float: right;
+            background-color: black;
+            margin-right: 125px;
+            margin-top: 35px;
+            padding: 5px;
+            border-radius: 15px;
+            font-size: 15px;
+            padding-left: 25px;
+        }
+
+        .visit:hover {
+            background-color: red;
+        }
+
+        .sec {
+            background-image: url('274924378_10159082938872408_6701819554796891688_n.jpg');
+            background-size: cover;
+            height: 650px;
+            margin-top: 20px;
+            width: 100%;
+            position: static;
+            background-attachment: fixed;
+        }
+
+        .text {
+            color: white;
+            width: 700px;
+            padding-top: 200px;
+            font-size: 65px;
+            font-weight: bolder;
+            padding-left: 100px;
+        }
+
+        #second {
+            width: 100%;
+            height: 640px;
+        }
+
+        #image {
+            width: 320px;
+            height: 420px;
+            margin-top: 100px;
+            margin-left: 240px;
+        }
+
+        .first {
+            float: right;
+            margin-top: 95px;
+            margin-right: 675px;
+            height: 30px;
+        }
+
+        .first h4 {
+            color: red;
+            padding-bottom: 18px;
+        }
+
+        .first h1 {
+            font-size: 40px;
+        }
+
+        .snd {
+            background-color: rgb(255, 249, 249);
+            height: 230px;
+            width: 450px;
+            float: right;
+            margin-left: 580px;
+            position: absolute;
+            top: 1090px;
+            border-radius: 4px;
+        }
+
+        .snd h4 {
+            color: red;
+            padding-left: 15px;
+            padding-top: 12px;
+            font-size: 17px;
+        }
+
+        .snd p {
+            font-size: 16px;
+            padding-left: 13px;
+
+        }
+
+        .work {
+            padding-top: 50px;
+            padding-bottom: 15px;
+        }
+
+        .best {
+            padding-top: 9px;
+        }
+
+        .get {
+            padding-top: 4px;
+        }
+
+        .contract {
+            width: 250px;
+            height: 420px;
+            position: absolute;
+            top: 800px;
+            margin-left: 1070px;
+            box-shadow: 2px 2px 8px 5px #ece9e9ef;
+            border: 10px;
+            border-color: rgb(83, 60, 30);
+            padding-top: 24px;
+            padding-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        .contract p {
+            padding-left: 95px;
+            padding-bottom: 25px;
+            font-size: 15px;
+            color: rgb(187, 189, 191);
+        }
+
+        .contract h3 {
+            padding-left: 95px;
+            padding-top: 20px;
+            font-size: 24px;
+
+        }
+
+        .line {
+            width: 450px;
+            margin-top: 13px;
+            border-color: rgba(253, 249, 249, 0.899);
+            border-top: 2px solid rgba(236, 236, 236, 0.495);
+        }
+
+        .line2 {
+            width: 450px;
+            margin-top: 0px;
+            border-color: rgba(253, 249, 249, 0.899);
+            border-top: 2px solid rgba(236, 236, 236, 0.495);
+        }
+
+        .line3 {
+            border-top: 2px solid rgb(255, 254, 254);
+        }
+
+        .line4 {
+            border-top: 2px solid rgb(255, 254, 254);
+        }
+
+        .line5 {
+            border-top: 2px solid rgb(255, 254, 254);
+        }
+
+        .bgp {
+            background-image: url(blur-background-coastal-interior-summer-600nw-2461584851.jpg);
+            height: 320px;
+            width: 790px;
+            background-size: cover;
+            margin-left: 370px;
+        }
+
+        .bgp h1 {
+            color: rgb(255, 255, 255);
+            padding-top: 6px;
+            padding-left: 290px;
+            font-size: 27px;
+        }
+
+        .twopic {
+            height: 600px;
+        }
+
+        .bgp h5 {
+            color: red;
+            padding-left: 360px;
+            padding-top: 47px;
+        }
+
+        .sndpic {
+            background-image: url(groundfloor-livingroom.jpg);
+            background-size: cover;
+            height: 270px;
+            width: 500px;
+            position: absolute;
+            top: 1550px;
+            margin-left: 513px;
+        }
+
+        .one {
+            width: 130px;
+            height: 45px;
+            background-color: rgb(255, 238, 231);
+            margin-top: 180px;
+            float: left;
+            margin-left: 495px;
+            border-radius: 5px;
+        }
+
+        .one h4 {
+            color: red;
+            font-size: 23px;
+            float: left;
+            padding-top: 8px;
+            padding-left: 16px;
+        }
+
+        .one p {
+            float: right;
+            font-size: 10px;
+            padding-top: 10px;
+            padding-right: 14px;
+            font-weight: bold;
+        }
+
+        .two {
+            width: 130px;
+            height: 45px;
+            background-color: rgb(255, 238, 231);
+            margin-top: 180px;
+            float: left;
+            margin-left: 80px;
+            border-radius: 5px;
+        }
+
+        .two h4 {
+            color: red;
+            font-size: 23px;
+            float: left;
+            padding-top: 8px;
+            padding-left: 16px;
+        }
+
+        .two p {
+            float: right;
+            font-size: 10px;
+            padding-top: 10px;
+            padding-right: 22px;
+            font-weight: bold;
+        }
+
+        .three {
+            width: 130px;
+            height: 45px;
+            background-color: rgb(255, 238, 231);
+            margin-top: 180px;
+            float: left;
+            margin-left: 70px;
+            border-radius: 5px;
+        }
+
+        .three h4 {
+            color: red;
+            font-size: 23px;
+            float: left;
+            padding-top: 8px;
+            padding-left: 17px;
+        }
+
+        .three p {
+            float: right;
+            font-size: 10px;
+            padding-top: 10px;
+            padding-right: 28px;
+            font-weight: bold;
+        }
+
+        .circle {
+            background-color: red;
+            position: absolute;
+            top: 1875px;
+            height: 22px;
+            width: 22px;
+            border-radius: 100%;
+            margin-left: 613px;
+            float: left;
+        }
+
+        #circle2 {
+            background-color: red;
+            position: absolute;
+            top: 1875px;
+            height: 22px;
+            width: 22px;
+            border-radius: 100%;
+            margin-left: 825px;
+            float: right;
+        }
+
+        .circle3 {
+            background-color: red;
+            position: absolute;
+            top: 1875px;
+            height: 22px;
+            width: 22px;
+            border-radius: 100%;
+            margin-left: 1025px;
+            float: right;
+        }
+        .fourth{
+            height: 480px;
+            width: 100%;
+        }
+        .main{
+            height: 430px;
+            width: 800px;
+            background-color: rgba(235, 235, 235, 0.718);
+            margin-left: 360px;
+        }
+        .appo{
+            float: left;
+            width: 80px;
+            height: 25px;
+            font-size: 11px;
+            background-color:black;
+            color: white;
+            margin-left: 500px;
+            padding-left: 10px;
+            padding-top: 5px;
+            border-radius: 3px;
+        }
+        .bestD{
+            float: left;
+            width: 300px;
+            height: 80px;
+        }
+        .bestD h4{
+            font-size: 10px;
+            color: red;
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+        .bestD h1{
+            font-size:25px ;
+            padding-top: 10px;
+            padding-left: 50px;
+            
+        }
+        .vh{
+            float: right;
+            width: 80px;
+            height: 25px;
+            font-size: 11px;
+            background-color:black;
+            color: white;
+            margin-right: 25px;
+            padding-left: 14px;
+            padding-top: 5px;
+            border-radius: 3px;
+            margin-bottom: 40px;
+        }
+        .ph{
+            float: left;
+            width: 80px;
+            height: 25px;
+            font-size: 12px;
+            background-color:black;
+            color: white;
+            margin-left: 13px;
+            padding-left: 15px;
+            padding-top: 5px;
+            border-radius: 3px;
+        }
+        .appo:hover{
+            background-color: rgb(248, 52, 52);
+        }
+        .vh:hover{
+            background-color: rgb(248, 52, 52);
+        }
+        .ph:hover{
+            background-color: rgb(248, 52, 52);
+        }
+        .left{
+            width: 150px;
+            height: 170px;
+            float: left;
+            background-color: white;
+            box-shadow: 2px 2px 8px 5px #ece9e9ef;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+       .para{
+        color: gray;
+        float: left;
+        font-size: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        }
+        .head{
+        font-size: 15px;
+        float: right;
+        font-weight: bold;
+        color: black;
+        padding-right: 15px;
+        padding-top: 5px;
+        }
+        .fourth img{
+            width: 300px;
+            height: 220px;
+            float: left;
+            margin-left: 30px;
+            margin-top: 50px;
+        }
+        .right{
+            float: right;
+            width: 200px;
+            height: 200px;
+            margin-right: 30px;
+            margin-top: 8px;
+        }
+        .right h3{
+            font-size: 14px;
+            padding-bottom: 22px;
+            font-weight: bolder;
+        }
+        .right p{
+            font-size: 10px;
+            color: gray;
+        }
+        .psnd{
+            padding-top: 20px;
+        }
+        .inside{
+            width: 92px;
+            height: 25px;
+            background-color: black;
+           margin-top: 19px;
+           border-radius: 50px;
+        }
+        .inside p{
+            font-size: 8px;
+            color: white;
+            padding-top: 8px;
+            padding-left: 30px;
+        }
+        .circle4{
+            background-color: red;
+            position: absolute;
+            top: 2335px;
+            height: 25px;
+            width: 25px;
+            border-radius: 100%2;
+            margin-right: 100px;
+            float: left;
+        }
+        .fifth{
+            height: 500px;
+            width: 100%;
+        }
+        .top p{
+            color: red;
+            font-size: 10px;
+            padding-top: 10px;
+        }
+        .top h1{
+            padding-top: 14px;
+        }
+        .divl{
+            width: 230px;
+            height: 320px;
+            background-color: rgba(235, 235, 235, 0.718);
+            margin-left: 390px;
+            float: left;
+            margin-top: 35px;
+        }
+        .divm{
+            width: 230px;
+            height: 320px;
+            background-color: rgba(235, 235, 235, 0.718);
+            margin-left: 27px;
+            float: left;
+            margin-top: 35px;
+        }
+        .divr{
+            width: 230px;
+            height: 320px;
+            background-color: rgba(235, 235, 235, 0.718);
+            margin-right: 380px;
+            float: right;
+            margin-top: 35px;
+        }
+        .fifth img{
+            width: 210px;
+            height: 120px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .luxury{
+            float: left;
+            width: 55px;
+            height: 14px;
+            background-color: rgb(248, 52, 52);
+            font-size: 9px;
+            margin-left: 15px;
+            border-radius: 3px;
+            color: white;
+            margin-top: 8px;
+            padding-left: 4px;
+            padding-top: 2px;
+        }
+        .fifth h4{
+            float: right;
+            font-size: 15px;
+            color: rgb(255, 102, 0);
+            font-weight: bolder;
+            padding-right: 15px;
+            padding-top: 7px;
+        }
+        .fifth h2{
+            font-size: 12px;
+            font-weight:bolder;
+          float: left;
+          width: 200px;
+          padding-left: 15px;
+          padding-top: 10px;
+        }
+        .scehduleVisit{
+           float: left;
+            margin-left: 60px;
+            margin-top: 15px;
+            width: 108px;
+            height: 23px;
+            background-color: black;
+            color: white;
+            font-size: 12px;
+            padding-left: 13px;
+            padding-top: 4px;
+            border-radius: 15px;
+        }
+        .fifth hr{
+            margin-top: 110px;
+        }
+        /* .bedr{
+            padding-top: 10px;
+            font-size: 10px;
+            color: gray;
+        } */
+        .fifth span{
+            float: left;
+            font-size: 11px;
+            color: gray;
+            margin-left: 5px;
+            margin-top: 8px;
+            padding-left: 10px;
+            padding-right: 4px;
+
+        }
+        .fifth p{
+            color: black;
+            font-weight: bolder;
+            float: right;
+            padding-left: 4px;
+        }
+        .list{
+            margin-top: 40px;
+        }
+        .blurimg {
+            background-image: url(cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3JtNjg2LXBsLTIxLmpwZw.jpg);
+            background-size: cover;
+            width: 900px;
+            height: 350px;
+            margin-left: 310px;
+        }
+        .sixth{
+            width: 100%;
+            height: 550px;
+        }
+        .sixth p{
+            color: red;
+            text-decoration: none;
+            font-size: 12px;
+            padding-top: 70px;
+        }
+        .sixth h1{
+            color: white;
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        .map{
+            position: absolute;
+            top: 3150px;
+            height: 400px;
+           margin-left: 400px;
+        }
+        .map img{
+            height: 300px;
+            width: 400px;
+            float: left;
+        }
+        .form img{
+            width: 300px;
+            height: 400px;
+            float: left;
+            margin-left:850px;
+            position: absolute;
+            top: 3150px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+        <div class="villa">VILLA</div>
+        <a href="" class="head" id="home">Home</a>
+        <a href="" class="head" id="pro">Properties</a>
+        <a href="" class="head" id="proD">Property Details</a>
+        <a href="" class="head" id="contact">Contact Us</a>
+        <div class="visit">Schedule a visit</div>
+        </nav>
+    </header>
+    <section class="sec">
+        <h1 class="text">HURRY!<br>GET THE BEST<br>VILLA FOR YOU</h1>
+    </section>
+
+    <section id="second">
+        <img src="Screenshot (306).png" id="image">
+        <div class="first">
+            <h4>| FEATURED</h4>
+            <h1>Best<br>Appartment &<br>Sea View</h1>
+        </div>
+        <div class="snd">
+            <h4>Best useful links ?</h4>
+            <hr class="line">
+            <p class="get">Get <b>The best villa</b> website template in HTML CSS and Bootstrap for your bussiness.
+                TemplateMo provides you the best free CSS templates in the world. Please tell your friends about it.
+            </p>
+            <p class="work">How does it work?</p>
+            <hr class="line2">
+            <p class="best">Why is villa agency the best?</p>
+        </div>
+        <div class="contract" style="border-color: rgb(86, 64, 35);">
+            <h3>250m2</h3>
+            <p>Total Flat Space</p>
+            <hr class="line3">
+            <h3>Contract</h3>
+            <p>Contract Ready</p>
+            <hr class="line4">
+            <h3>Payment</h3>
+            <p>Payment Process</p>
+            <hr class="line5">
+            <h3>Safety</h3>
+            <p>24/7 Under Control</p>
+        </div>
+    </section>
+
+    <section class="twopic">
+        <div class="bgp">
+            <h5>| Video View</h5>
+            <h1>Get Closer View &<br>Different Feeling </h1>
+        </div>
+        <div class="sndpic">
+        </div>
+        <div class="one">
+            <div>
+                <h4>34</h4>
+            </div>
+            <p>Buildings<br>Finished Now</p>
+        </div>
+        <div class="two">
+            <div>
+                <h4>12</h4>
+            </div>
+            <p>Years<br>Experience</p>
+        </div>
+        <div class="three">
+            <div>
+                <h4>24</h4>
+            </div>
+            <p>Awards<br>Won 2023</p>
+        </div>
+        <div class="circle"></div>
+        <div id="circle2"></div>
+        <div class="circle3"></div>
+    </section>
+
+    <section class="fourth">
+        <div class="main">
+            <div class="bestD"><h4>| Best Deal</h4>
+            <h1>Find Your Best Deal<br>Right Now!</h1></div>
+            <div class="appo">Appointment</div>
+            <div class="vh">Villa House</div>
+            <div class="ph">Penthouse</div>
+            <div class="left">
+                <div class="para"><p>Total flat space</p></div>
+                <div class="head"><h5 class="tfs">185 m2</h5></div>
+
+                <div class="para"><p class="fn">Floor Number</p></div>
+                <div class="head"><h5 class="fnum">26th</h5><br></div>
+
+                <div class="para"><p>Number Of Rooms</p></div>
+                <div class="head"><h5 class="numr">Fourth</h5></div>
+
+                <div class="para"><p>Parking available</p></div>
+                <div class="head"><h5 class="pa">Yes</h5></div>
+
+                <div class="para"><p>Payment Process</p></div>
+                <div class="head"><h5 class="pp">Bank</h5></div>
+            </div>
+            <img src="modern-indoor-living-room-with-comfortable-sofa_1010572-392.avif">
+            <div class="right">
+                <h3>Extra Info About Property</h3>
+                <p>Property refers to anything owned or controlled by an individual or entity, and it is broadly divided
+                    into real property and personal property Real property includes land.</p><p class="psnd">any attached structures,
+                    like homes or commercial buildings, while personal property encompasses movable items such as
+                    vehicles, furniture, and electronics. Property refers to anything owned or controlled by an individual or entity.</p>
+                    <div class="inside">
+                        <p>Schedule a visit</p>
+                    </div>
+                    <div class="circle4"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fifth"> 
+        <div class="top">
+            <center><p>| PROPERTIES</p></center>
+            <center><h1>We Provide The<br>Best Property You<br>Like</h1></center>
+        </div>
+        <div class="divl">
+            <img src="1677876110_en-idei-club-p-modern-house-with-a-swimming-pool-3.jpg">
+            <div class="luxury">Luxery Villa</div>
+            <div><h4>$2.264.000</h4></div><br>
+            <h2>18 New Street Miamai, OR 97219</h2>
+                <div class="list">
+            <span class="bedr">Bedroom: <p>8</p> </span><span class="detail">Bathrooms: <p>8</p></span>
+            <span class="bedr">Area: <p>545m2</p> </span>  <span>Floor: <p>3</p>  </span> <span>Parking: <p>6 slots</p></span></div>
+            <hr>
+            <div class="scehduleVisit">Schedule a visit</div>
+        </div>
+        <div class="divm">
+            <img src="istockphoto-147205632-612x612.jpg">
+            <div class="luxury">Luxery Villa</div>
+            <div><h4>$1.180.000</h4></div><br>
+            <h2>54 Mild Street Florida, OR 27001</h2>
+            <div class="list">
+                <span class="bedr">Bedroom: <p>6</p> </span><span class="detail">Bathrooms: <p>5</p></span>
+                <span class="bedr">Area: <p>458 m2</p> </span>  <span>Floor: <p>3</p>  </span> <span>Parking: <p>8 slots</p></span></div>
+            <div></div>
+            <hr>
+            <div class="scehduleVisit">Schedule a visit</div>
+        </div>
+        <div class="divr">
+            <img src="modern-tiny-house-small-house-architecture-240419-109-01-800x537.jpg">
+            <div class="luxury">Luxery Villa</div>
+            <div><h4>$1.460.000</h4></div><br>
+            <h2>26 Old Street Miamai, OR 38540</h2>
+            <div class="list">
+                <span class="bedr">Bedroom: <p>5</p> </span><span class="detail">Bathrooms: <p>4</p></span>
+                <span class="bedr">Area: <p>225m2</p> </span>  <span>Floor: <p>3</p>  </span> <span>Parking: <p>10 slots</p></span></div>
+            <hr>
+            <div class="scehduleVisit">Schedule a visit</div>
+        </div>
+    </section>
+    <section class="sixth">
+        <div class="blurimg">
+           <center><p>| Contact Us</p>
+            <h1>Get In Touch With<br>Our Agents</h1></center>
+        </div>
+        <div class="map">
+            <img src="images.jpeg">
+        </div>
+        <div class="form">
+            <img src="modern-indoor-living-room-with-comfortable-sofa_1010572-392.avif">
+        </div>
+    </section>
+</body>
+
+</html>

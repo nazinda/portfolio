@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        header{
+            height: 100px;
+            width: 100%;
+            background-color: white;
+        }
+        .head{
+            color: black;
+            text-decoration: none;
+            margin-left: 100px;
+            font-size: 18px;
+            float: left;
+            margin-top: 38px;
+            font-weight: bolder;
+        }
+        #menu{
+            border-collapse: collapse;
+            border: 0px;
+        }
+        #menu option{
+            border-collapse: collapse;
+            border: 0px;
+        }
+        #menu:hover{
+            color: brown;
+        }
+        #home{
+            margin-left: 430px;
+        }
+        a:hover{
+            color: red;
+        }
+        header p{
+            color: black;
+            font-size: 30px;
+            font-family: 'Tangerine', serif;
+            font-weight: bolder;
+            padding-top: 5px;
+            float: left;
+            padding-left: 0px;
+        }
+        header img{
+            width: 150px;
+            height: 90px;
+            float: left;
+        }
+        body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .switch {
+      width: 60px;
+      height: 30px;
+      background: #ccc;
+      border-radius: 50px;
+      position: relative;
+      cursor: pointer;
+      margin-left: 1400px;
+      margin-top: 32px;
+      position: absolute;
+    }
+
+    .circle {
+      width: 26px;
+      height: 26px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.3s;
+    }
+
+    .switch.active {
+      background: lightpink;
+    }
+
+    .switch.active .circle {
+      transform: translateX(30px);
+    }
+    .mainsec{
+        height: 2800px;
+        width: 100%;
+    }
+    h1{
+        padding-left: 40px;
+        padding-top: 20px;
+    }
+    li{
+        font-weight: bolder;
+        margin-left: 60px;
+    }
+    .mainsec p{
+        padding-left: 65px;
+    }
+    font{
+        font-weight: bold;
+    }
+    #footer{
+            height: 400px;
+            width: 100%;
+        }
+        #foot{
+            background-color: black;
+            height: 400px;
+            width:100%;
+        }
+        #phone{
+            width: 15px;
+            height: 15px;
+            margin-top: 21px;
+            margin-left: 80px;
+        }
+        #envelope{
+            width: 30px;
+            height: 25px;
+            margin-top: 10px;
+            margin-left: 75px;
+        }
+        #foot h1{
+            color: white;
+            padding-left: 80px;
+            padding-top: 80px;
+        }
+        #foot p{
+            color: white;
+            padding-left: 80px;
+            padding-top: 10px;
+        }
+        #foot font{
+            color: white;
+            font-size: 14px;
+            position: absolute;
+        }
+        #num{
+            padding-top: 20px;
+            padding-left: 16px;
+        }
+        #email{
+            padding-top: 12px;
+            padding-left: 10px;
+        }
+        #copy{
+            left: 650px;
+            top: 3280px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <img src="logo-removebg-preview.png">
+        <p>Pretty Plates</p>
+        <span><a href="project.html" class="head" id="home">Home</a></span>
+        <span><a href="project.html#ourrecipes" class="head">Menu</a></span>
+        <span><a href="factsandfigures.html" class="head" id="faqs">FAQs</a></span>
+        <span><a href="#footer" class="head" id="contact">About Us</a></span>
+        <span><a href="" class="head" id="faf">Feedback</a></span>
+        <div class="switch" onclick="toggleMode()">
+            <div class="circle"></div>
+        </div>
+        </nav>
+    </header>
+    <section class="mainsec">
+        <h1>General FAQs</h1>
+        <ol>
+            <li>What are the most common reasons students eat on campus?</li>
+            <p><font>Answer:</font> Students eat on campus primarily for convenience, affordability, and the availability of favorite dishes like biryani, burgers, and Chinese food.
+            </p>
+            <li>Which factors influence meal selection the most?</li>
+            <p><font>Answer:</font> The top factors influencing meal selection are speed of service (47.3%), portion size (28.1%), and taste (11.2%).</p>
+            <li>How do students prioritize healthiness when selecting meals?</li>
+            <p><font>Answer:</font> Only 6% of respondents prioritize healthiness when choosing meals, indicating that taste, speed, and affordability dominate their decision-making.</p>
+           <hr>
+        </ol>
+
+<h1>Dishes and Preferences FAQs</h1>
+<ol>
+    <li>Which dishes are the most and least popular among students?</li>
+    <p><font>Answer:</font> The most popular dish is biryani (30% of respondents), while the least popular dishes are Chinese food and other cuisines (15% each).</p>
+    <li>What percentage of students prefer traditional food over other types?</li>
+    <p><font>Answer:</font> 22.2% of respondents prefer traditional food over options like Chinese (12.2%) or burgers (18%).</p>
+    <li>Do students often prefer multiple types of food?</li>
+    <p><font>Answer:</font> Yes, some students show overlapping preferences, e.g., combining traditional and Chinese food or preferring both burgers and pizza.</p>
+    <hr>
+</ol>
+<h1>Beverage and Meal Frequency FAQs</h1>
+<ol>
+    <li>What are the most preferred beverages among students?</li>
+    <p><font>Answer:</font> Milkshakes (45.5%) and Tea/Coffee (22.8%) are the most preferred beverages, with soft drinks (21.5%) being slightly less popular.</p>
+    <li>How often do students eat on campus per week?</li>
+    <p><font>Answer:</font> The average frequency of eating on campus is 2.77 times per week, with most students eating twice per week (36.7%).</p>
+    <li>Do students who eat more frequently spend more on meals?</li>
+    <p><font>Answer:</font> Students who eat more frequently tend to spend less per meal on average, prioritizing affordability over variety or premium options.</p>
+    <hr>
+</ol>
+<h1>Spending and Payment FAQs</h1>
+<ol>
+    <li>How much do students typically spend on meals?</li>
+    <p><font>Answer:</font> On average, students spend 420.15 PKR per meal. The majority spend between 200–400 PKR (15.3%) or 400–500 PKR (41.9%).</p>
+    <li>What payment methods do students prefer?</li>
+    <p><font>Answer:</font> The majority of students prefer cash payments (42.6%), followed by online transfers.</p>
+    <li>Do spending patterns differ between students who prefer specific dishes?</li>
+    <p><font>Answer:</font> Yes, students preferring traditional dishes tend to spend more, as these dishes often fall in the 400–500 PKR range.</p>
+    <hr>
+</ol>
+<h1>Seating and Dining Preferences FAQs</h1>
+<ol>
+    <li>Where do students prefer to sit while eating on campus?</li>
+    <p><font>Answer:</font> Most students prefer indoor seating (55.3%), while outdoor seating appeals to 35.6%, and 9.1% like both options equally.</p>
+    <li>Do seating preferences correlate with spending?</li>
+    <p><font>Answer:</font> Yes, students preferring indoor seating tend to spend more per meal on average compared to those who choose outdoor seating.</p>
+    <li>What are students’ views on improving the dining experience?</li>
+    <p><font>Answer:</font> Open-ended responses suggest that students want:
+        <ul>
+            <li>Better hygiene standards,</li>
+            <li>Faster service,</li>
+            <li>A wider variety of menu options, and</li>
+            <li>Affordable combo deals.</li>
+        </ul>
+	</p>
+    <hr>
+</ol>
+<h1>Open-Ended Questions FAQs</h1>
+<ol>
+    <li>What are the top complaints about campus dining?</li>
+	<p><font>Answer:</font> Students commonly cite:
+        <ul>
+    <li>Long waiting times for food,</li>
+	<li>Limited menu options, and</li>
+	<li>Inconsistent food quality.</li>
+        </ul>
+    </p>
+	<li>What changes do students want for food quality and service?</li>
+	<p><font>Answer:</font> Students want:
+        <ul>
+	        <li>Higher-quality ingredients,</li>
+	        <li>A focus on healthy meal options, and</li>
+	        <li>Staff trained to provide quicker and more reliable service.</li>
+        </ul>
+    </p>
+	<li>How do students view the pricing of meals on campus?</li>
+	<p><font>Answer:</font> While some students find the prices reasonable, others believe that combo deals or discounts for frequent diners would make dining more affordable.</p>
+	<li>Do students prefer delivery services for meals?</li>
+	<p><font>Answer:</font> Yes, a majority of students expressed interest in delivery services if it includes:
+        <ul>
+	        <li>Reasonable delivery charges,</li>
+	        <li>Timely service, and</li>
+	        <li>Packaging that maintains food quality.</li>
+        </ul>
+        <hr>
+    </p>
+</ol>
+<h1>Behavioral and Demographic FAQs</h1>
+<ol>
+	<li>Are there significant gender differences in food preferences?</li>
+	<p><font>Answer:</font> Yes, female respondents are more likely to prioritize healthiness and variety, while males tend to focus on portion size and speed of service.</p>
+	<li>Do younger students differ from older students in their dining habits?</li>
+	<p><font>Answer:</font> Younger students (ages 18–20) tend to prefer traditional dishes, while older students (21–24) show a growing interest in fast food and Chinese options.</p>
+	<li>What are the dining habits of students spending less than 200 PKR per meal?</li>
+	<p><font>Answer:</font> These students eat less frequently (once or twice per week) and primarily choose affordable options like snacks or small meals.</p>
+<hr>
+</ol>
+
+    </section>
+    <section id="footer">
+        <div id="foot">
+            <h1>About Us</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam praesentium amet <br>perspiciatis commodiearum est a voluptate ipsa,hic cum quaerat numquam assumenda dicta, <br>vero esse maiores consectetur repellat nisi!</p>
+            <img src="phone-removebg-preview.png" id="phone"><font id="num">+923123765430</font><br>
+            <img src="envelop-removebg-preview.png" id="envelope"><font id="email">prettyplates@gmail.com</font>
+            <p id="copy">&copy; 2024 PrettyPlates</p>
+        </div>
+    </section>
+</body>
+
+<script>
+    function toggleMode() {
+      const body = document.body;
+      const switchElement = document.querySelector('.switch');
+
+      if (switchElement.classList.toggle('active')) {
+        body.style.backgroundColor = 'black';
+        body.style.color = 'white';
+      } else {
+        body.style.backgroundColor = 'white';
+        body.style.color = 'black';
+      }
+    }
+  </script>
+</html>

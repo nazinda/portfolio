@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretty Plates</title>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        header{
+            height: 100px;
+            width: 100%;
+            background-color: white;
+        }
+        .head{
+            color: black;
+            text-decoration: none;
+            margin-left: 100px;
+            font-size: 18px;
+            float: left;
+            margin-top: 38px;
+            font-weight: bolder;
+        }
+        #menu{
+            border-collapse: collapse;
+            border: 0px;
+        }
+        #menu option{
+            border-collapse: collapse;
+            border: 0px;
+        }
+        #menu:hover{
+            color: brown;
+        }
+        #home{
+            margin-left: 430px;
+        }
+        a:hover{
+            color: red;
+        }
+        header p{
+            color: black;
+            font-size: 30px;
+            font-family: 'Tangerine', serif;
+            font-weight: bolder;
+            padding-top: 5px;
+            float: left;
+            padding-left: 0px;
+        }
+        header img{
+            width: 150px;
+            height: 90px;
+            float: left;
+        }
+        #mainSection{
+            background-image: url('background1.jpg');
+            background-size: cover;
+            height: 650px;
+            margin-top: 0px;
+            width: 100%;
+            position: static;
+            background-attachment: fixed;
+        }
+        #welcome{
+            color: white;
+            font-size: 100px;
+            position: absolute;
+            padding-top: 130px;
+            padding-left: 440px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0.2, 0.2, 0.2, 1),
+                         5px 5px 10px rgba(0, 0, 0, 1);
+        }
+        #name{
+            color: white;
+            font-size: 70px;
+            position: absolute;
+            padding-top: 260px;
+            padding-left: 498px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgba(0.2, 0.2, 0.2, 1),
+                         5px 5px 10px rgba(0, 0, 0, 1);
+            font-family: 'Tangerine', serif;
+            font-weight: bold;
+        }
+        #ourrecipes{
+            height: 1700px;
+            width: 100%;
+        }
+        #pizzaparata{
+            height: 631px;
+            width: 600px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            margin-left: 150px;
+            margin-top: 70px;
+            float: left;
+        }
+        #recipetxt{
+            color: brown;
+            padding-left: 680px;
+            padding-top: 60px;
+            font-size: 30px;
+        }
+        .lunch{
+            color: brown;
+            padding-left: 740px;
+            padding-top: 10px;
+            font-size: 28px;
+        }
+        #pizzaparata img{
+            height: 400px;
+            width: 590px;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: transform 0.5s;
+        }
+        #pizzaparata h1{
+            padding-left: 20px;
+            font-size: 35px;
+            position: absolute;
+        }
+        #pizzaparata p{
+            padding-top: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: absolute;
+            
+        }
+        #priceOfBiryani{
+            color: brown;
+            position: absolute;
+            top: 1510px;
+            left: 600px;
+            font-size: 22px;
+        }
+        #biryani{
+            height: 1300px;
+            width: 300px;
+            position: absolute;
+            margin-left: 780px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            margin-top: 70px;
+        }
+        #biryani img{
+            height: 200px;
+            width: 290px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        .name{
+            padding-left: 10px;
+            position: a;
+        }
+        .price{
+            color: brown;
+            padding-left: 230px;
+            font-weight: bold;
+        }
+        #chaat{
+            height: 1300px;
+            width: 300px;
+            position: absolute;
+            margin-left: 1110px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            margin-top: 70px;
+        }
+        #chaat img{
+            height: 200px;
+            width: 290px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #qorma{
+            width: 290px;
+            height: 669px;
+            margin-left: 460px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            position: absolute;
+            margin-top: 702px;
+        }
+        #qorma img{
+            height: 200px;
+            width: 280px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #next{
+            width: 290px;
+            height: 669px;
+            margin-left: 150px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            position: absolute;
+            margin-top: 702px;
+        }
+        #next img{
+            height: 200px;
+            width: 280px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #ppofckarahi{
+            float: left;
+            position: absolute;
+            padding-left: 200px;
+            color: brown;
+            top: 568px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #ppofmkarahi{
+            float: left;
+            position: absolute;
+            padding-left: 200px;
+            color: brown;
+            top: 588px;
+            font-size: 14px;
+            font-weight: bold;
+
+        }
+        #ckarahi{
+            float: left;
+            position: absolute;
+            bottom: 700px;
+        }
+        #mkarahi{
+            float: left;
+            position: absolute;
+            bottom: 680px;
+        }
+        #alfaredo{
+            float: left;
+            position: absolute;
+            bottom: 380px;
+        }
+        #reds{
+            float: left;
+            position: absolute;
+            bottom: 360px;
+        }
+        #ppofalfarido{
+            float: left;
+            position: absolute;
+            padding-left: 200px;
+            color: brown;
+            top: 888px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #ppofreds{
+            float: left;
+            position: absolute;
+            padding-left: 200px;
+            color: brown;
+            top: 908px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .img:hover{
+            transform: scale(0.85);
+            box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+        }
+        #breakfast{
+            height: 1200px;
+            width: 100%;
+        }
+        #paratha{
+            height: 631px;
+            width: 600px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            margin-left: 810px;
+            margin-top: 70px;
+            float: left;
+        }
+        #paratha img{
+            height: 400px;
+            width: 590px;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: transform 0.5s;
+        }
+        #paratha h1{
+            padding-left: 20px;
+            font-size: 35px;
+            position: absolute;
+        }
+        #paratha p{
+            padding-top: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: absolute;
+            
+        }
+        #priceOfparata{
+            color: brown;
+            position: absolute;
+            top: 3130px;
+            left: 1300px;
+            font-size: 22px;
+        }
+        #chai{
+            height: 630px;
+            width: 300px;
+            position: absolute;
+            margin-left: 480px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            margin-top: 70px;
+        }
+        #chai img{
+            height: 200px;
+            width: 290px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #coffee{
+            height: 630px;
+            width: 300px;
+            position: absolute;
+            margin-left: 150px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            margin-top: 70px;
+        }
+        #coffee img{
+            height: 200px;
+            width: 290px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #channe{
+            width: 400px;
+            height: 369px;
+            margin-left: 1010px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            position: absolute;
+            margin-top: 702px;
+        }
+        #channe img{
+            height: 250px;
+            width: 390px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #halwa{
+            width: 400px;
+            height: 369px;
+            margin-left: 580px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            position: absolute;
+            margin-top: 702px;
+        }
+        #halwa img{
+            height: 250px;
+            width: 390px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #omelette{
+            float: left;
+            position: absolute;
+            bottom: 405px;
+        }
+        #chesseo{
+            float: left;
+            position: absolute;
+            bottom: 35px;
+        }
+        #ppofcheese{
+            float: left;
+            position: absolute;
+            padding-left: 200px;
+            color: brown;
+            top: 563px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #ppofomelette{
+            float: left;
+            position: absolute;
+            padding-left: 200px;
+            color: brown;
+            top: 584px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #green{
+            float: left;
+            position: absolute;
+            bottom: 350px;
+        }
+        #black{
+            float: left;
+            position: absolute;
+            bottom: 330px;
+        }
+        #ppofgreen{
+            float: left;
+            position: absolute;
+            padding-left: 200px;
+            color: brown;
+            top: 250px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #ppofblack{
+            float: left;
+            position: absolute;
+            padding-left: 200px;
+            color: brown;
+            top: 270px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #pizzap{
+            width: 400px;
+            height: 369px;
+            margin-left: 150px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            position: absolute;
+            margin-top: 702px;
+        }
+        #pizzap img{
+            height: 250px;
+            width: 390px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #snacks{
+            height: 850px;
+            width: 100%;
+        }
+        #fries{
+            height: 631px;
+            width: 600px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            margin-left: 150px;
+            margin-top: 70px;
+            float: left;
+        }
+        #fries img{
+            height: 400px;
+            width: 590px;
+            margin-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            transition: transform 0.5s;
+        }
+        #fries h1{
+            padding-left: 20px;
+            font-size: 35px;
+            position: absolute;
+        }
+        #fries p{
+            padding-top: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: absolute;
+            
+        }
+        #priceOffries{
+            color: brown;
+            position: absolute;
+            top: 4350px;
+            left: 600px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        #samosa{
+            height: 630px;
+            width: 300px;
+            position: absolute;
+            margin-left: 780px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            margin-top: 70px;
+        }
+        #samosa img{
+            height: 200px;
+            width: 290px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #russian{
+            height: 630px;
+            width: 300px;
+            position: absolute;
+            margin-left: 1110px;
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            float: left;
+            margin-top: 70px;
+        }
+        #russian img{
+            height: 200px;
+            width: 290px;
+            margin: 5px;
+            transition: transform 0.5s;
+        }
+        #beverages{
+            height: 1000px;
+            width: 100%;
+        }
+        #mint{
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            margin-left: 150px;
+            margin-top: 90px;
+            float: left;
+            height: 300px;
+            width: 300px
+        }
+        #mint img{
+            width:290px ;
+            height: 150px;
+            padding: 5px;
+        }
+        #lassi{
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            margin-left: 30px;
+            margin-top: 90px;
+            float: left;
+            height: 300px;
+            width: 300px
+        }
+        #lassi img{
+            width:290px ;
+            height: 150px;
+            padding: 5px;
+        }
+        #banana{
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            margin-left: 30px;
+            margin-top: 90px;
+            float: left;
+            height: 300px;
+            width: 300px
+        }
+        #banana img{
+            width:290px ;
+            height: 150px;
+            padding: 5px;
+        }
+        #soft{
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            margin-left: 30px;
+            margin-top: 90px;
+            float: left;
+            height: 300px;
+            width: 300px
+        }
+        #soft img{
+            width:290px ;
+            height: 150px;
+            padding: 5px;
+        }
+        #strawberry{
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            left: 160px;
+            margin-top: 35px;
+            float:left;
+            height: 350px;
+            width: 400px;
+            position: absolute;
+        }
+        #strawberry img{
+            width:390px ;
+            height: 200px;
+            padding: 5px;
+        }
+        #chocolate{
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            left: 610px;
+            margin-top: 35px;
+            float: left;
+            position: absolute;
+            height: 350px;
+            width: 400px
+        }
+        #chocolate img{
+            width:390px ;
+            height: 200px;
+            padding: 5px;
+        }
+        #hot{
+            border: 1px solid rgb(215, 213, 213);
+            box-shadow:1px 1px 2px rgba(200, 200, 200, 0.8) ;
+            left: 1050px;
+            margin-top: 35px;
+            float: left;
+            position: absolute;
+            height: 350px;
+            width: 400px
+        }
+        #hot img{
+            width:390px ;
+            height: 200px;
+            padding: 5px;
+        }
+        .price2{
+            color: brown;
+            padding-left: 310px;
+            font-weight: bold;
+        }
+        #delievery{
+            height: 500px;
+            width: 100%;
+        }
+        #comings{
+            width: 92%;
+            height: 300px;
+            background-color:rgb(173, 72, 72);
+            margin-left: 80px;
+        }
+        #comings h1{
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+            padding-left: 800px;
+            padding-top: 120px;
+        }
+        #comings img{
+            margin-left: 50px;
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            top: 5640px;
+        }
+        #footer{
+            height: 400px;
+            width: 100%;
+        }
+        #foot{
+            background-color: black;
+            height: 400px;
+            width:100%;
+        }
+        #phone{
+            width: 15px;
+            height: 15px;
+            margin-top: 21px;
+            margin-left: 80px;
+        }
+        #envelope{
+            width: 30px;
+            height: 25px;
+            margin-top: 10px;
+            margin-left: 75px;
+        }
+        #foot h1{
+            color: white;
+            padding-left: 80px;
+            padding-top: 80px;
+        }
+        #foot p{
+            color: white;
+            padding-left: 80px;
+            padding-top: 10px;
+        }
+        #foot font{
+            color: white;
+            font-size: 14px;
+            position: absolute;
+        }
+        #num{
+            padding-top: 20px;
+            padding-left: 16px;
+        }
+        #email{
+            padding-top: 12px;
+            padding-left: 10px;
+        }
+        body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .switch {
+      width: 60px;
+      height: 30px;
+      background: #ccc;
+      border-radius: 50px;
+      position: relative;
+      cursor: pointer;
+      margin-left: 1400px;
+      margin-top: 32px;
+      position: absolute;
+    }
+
+    .circle {
+      width: 26px;
+      height: 26px;
+      background: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: transform 0.3s;
+    }
+
+    .switch.active {
+      background: lightpink;
+    }
+
+    .switch.active .circle {
+      transform: translateX(30px);
+    }
+    #copy{
+            left: 650px;
+            top: 6480px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <img src="logo-removebg-preview.png">
+        <p>Pretty Plates</p>
+        <span><a href="#mainSection" class="head" id="home">Home</a></span>
+        <span><a href="#ourrecipes" class="head">Menu</a></span>
+        <span><a href="factsandfigures.html" class="head" id="faqs">FAQs</a></span>
+        <span><a href="#footer" class="head" id="contact">About Us</a></span>
+        <span><a href="" class="head" id="faf">Feedback</a></span>
+        <div class="switch" onclick="toggleMode()">
+            <div class="circle"></div>
+        </div>
+        </nav>
+    </header>
+    <section id="mainSection">
+        <h1 id="welcome">WELCOME TO</h1>
+        <p id="name">PRETTY PLATES</p>
+    </section>
+    <section id="ourrecipes">
+        <h1 id="recipetxt">Meal Offerings</h1>
+        <h1 class="lunch">Lunch</h1>
+        <div id="pizzaparata">
+            <img src="pizzaparatha.jpg" class="img">
+            <h1>Pizza Paratha</h1><br>
+            <p>A delicious fusion of cheesy goodness and flaky perfection, this dishcombines the<br> richness of savory flavors with a crispy, golden crust. Perfectly crafted witha blend of <br>fresh ingredients and aromatic spices, it promises a unique and satisfying experience<br>for every bite.</p>
+            <p id="priceOfBiryani">Rs280</p>
+        </div>
+        <div id="biryani">
+            <img src="biryani.jpg" class="img">
+            <h1 class="name">Spicy Biryani</h1>
+            <p class="price">Rs250</p>
+            <img src="chickenkarahi.jpg" class="img">
+            <h1 class="name">Karahi</h1>
+            <ul>
+                <li id="ckarahi">Chicken karahi</li><p id="ppofckarahi">Rs220</p><br>
+                <li id="mkarahi">Mutton Karahi</li><p id="ppofmkarahi">Rs280</p>
+            </ul>
+            <img src="keema.jpg" class="img">
+            <h1 class="name">Keema</h1>
+            <p class="price">Rs240</p>
+            <img src="palaw.png" class="img">
+            <h1 class="name">Desi Palao</h1>
+            <p class="price">Rs300</p>
+            
+        </div>
+        <div id="chaat">
+            <img src="daal.webp" class="img">
+            <h1 class="name">Daal Chawal</h1>
+            <p class="price">Rs150</p>
+            <img src="cburger.jpg" class="img">
+            <h1 class="name">Burger</h1>
+            <ul>
+                <li id="ckarahi">Chicken Burger</li><p id="ppofckarahi">Rs250</p><br>
+                <li id="mkarahi">Beef Burger</li><p id="ppofmkarahi">Rs300</p>
+            </ul>
+            <img src="pasta.jpg" class="img">
+            <h1 class="name">Pasta</h1>
+            <ul>
+                <li id="alfaredo">Alfarido Pasta</li><p id="ppofalfarido">Rs300</p><br>
+                <li id="reds">Red Sause Pasta</li><p id="ppofreds">Rs250</p>
+            </ul>
+            <img src="chowmein.jpg" class="img">
+            <h1 class="name">Chicken Chowmein</h1>
+            <p class="price">Rs280</p>
+        </div>
+        <div id="qorma">
+            <img src="naan.jpg" class="img">
+            <h1 class="name">Naan</h1>
+            <p class="price">Rs30</p>
+            <img src="shwarma.jpg" class="img">
+            <h1 class="name">Shwarma</h1>
+            <p class="price">Rs180</p>
+        </div>
+        <div id="next"> 
+        <img src="garlic.jpg" class="img">
+            <h1 class="name">Garlic Naan</h1>
+            <p class="price">Rs60</p>
+            <img src="chickenroll.jpg" class="img">
+            <h1 class="name">Chicken Role</h1>
+            <p class="price">Rs210</p>
+        </div>
+    </section>
+        <section id="breakfast">
+        <h1 class="lunch">BreakFast</h1>
+        <div id="paratha">
+            <img src="parata.webp" class="img">
+            <h1>Paratha</h1><br>
+            <p>Begin your day with the comforting warmth of a freshly made, flaky paratha, paired <br>with a variety of delicious breakfast options. Whether enjoyed with savory <br>fillings or classic sides, it’s the perfect way to start your morning. Accompanied <br>by refreshing beverages and light bites, it offers a satisfying and energizing start to <br>your day.</p>
+            <p id="priceOfparata">Rs60</p>
+        </div>
+        <div id="chai">
+            <img src="chai.jpg" class="img">
+            <h1 class="name">Chai</h1>
+            <p class="price">Rs50</p>
+            <img src="omlette.jpg" class="img">
+            <h1 class="name">Omelette</h1>
+            <ul>
+                <li id="omlette">Omeelette</li><p id="ppofomelette">Rs60</p><br>
+                <li id="chesseo">Cheese Omelette</li><p id="ppofcheese">Rs120</p>
+            </ul>
+        </div>
+        <div id="coffee">
+            <img src="tea.webp" class="img">
+            <h1 class="name">Tea</h1>
+            <ul>
+                <li id="green">Green Tea</li><p id="ppofgreen">Rs40</p><br>
+                <li id="black">Black Tea</li><p id="ppofblack">Rs40</p>
+            </ul>
+            <img src="coffee.png" class="img">
+            <h1 class="name">Coffee</h1>
+            <p class="price">Rs130</p>
+            
+        </div>
+        <div id="pizzap">
+            <img src="pizzaparatha.jpg" class="img">
+            <h1 class="name">Pizza Paratha</h1>
+            <p class="price">Rs280</p>
+        </div>
+        <div id="channe">
+            <img src="channe.jpg" class="img">
+            <h1 class="name">Channe</h1>
+            <p class="price">Rs120</p>
+        </div>
+        <div id="halwa"> 
+        <img src="halwa.webp" class="img">
+            <h1 class="name">Halwa Puri</h1>
+            <p class="price">Rs180</p>
+        </div>
+    </section>
+    <section id="snacks">
+        <h1 class="lunch">Snacks</h1>
+        <div id="fries">
+            <img src="fries.webp" class="img">
+            <h1>Fries</h1><br>
+            <p>Indulge in a variety of savory snacks, perfect for any time of the day. From crispy fries <br>to flavorful samosas, each bite is packed with deliciousness. Whether you’re <br>craving something crunchy, spicy, or hearty, our selection of snacks is sure to <br>satisfy your cravings and keep you coming back for more.</p>
+            <p id="priceOffries">Rs120</p>
+        </div>
+        <div id="samosa">
+            <img src="samosa.jpg" class="img">
+            <h1 class="name">Samosa</h1>
+            <p class="price">Rs35</p>
+            <img src="salad.jpg" class="img">
+            <h1 class="name">Salad</h1>
+            <p class="price">Rs60</p>
+        </div>
+        <div id="russian">
+            <img src="channachaat.jpg" class="img">
+            <h1 class="name">Channa Chaat</h1>
+            <p class="price">Rs100</p>
+            <img src="russian.jpg" class="img">
+            <h1 class="name">Russian Salad</h1>
+           <p class="price">Rs120</p>
+        </div>
+    </section>
+    <section id="beverages">
+        <h1 class="lunch">Beverages</h1>
+        <div id="mint">
+            <img src="mint.webp" class="img" id="mintmar">
+            <h1 class="name">Mint Margarita</h1>
+            <p class="price">Rs200</p>
+        </div>
+        <div id="soft">
+            <img src="softd.webp" class="img">
+            <h1 class="name">Soft Drinks</h1>
+            <p class="price">Rs120</p>
+        </div>
+        <div id="lassi">
+            <img src="lassi.jpg" class="img" id="lassiimg">
+            <h1 class="name">Lassi</h1>
+            <p class="price">Rs120</p>
+        </div>
+        <div id="banana">
+            <img src="banana.jpg" class="img" id="bananaimg">
+            <h1 class="name">Banana Milkshake</h1>
+            <p class="price">Rs180</p>
+            <div id="chocolate">
+                <img src="chocolate.jpg" class="img" id="chocolateimg">
+                <h1 class="name">Chocolate Milkshake</h1>
+                <p class="price2">Rs180</p>
+            </div>
+            <div id="strawberry">
+                <img src="strawberry.jpg" class="img" id="strawimg">
+                <h1 class="name">StrawBerry Milkshake</h1>
+                <p class="price2">Rs180</p>
+            </div>
+            <div id="hot">
+                <img src="hot.jpg" class="img" id="hotimg">
+                <h1 class="name">Hot Chocolate</h1>
+                <p class="price2">Rs120</p>
+            </div>
+        </div>
+    </section>
+    <section id="delievery">
+        <div id="comings">
+            <h1>COMING SOON!</h1>
+            <img src="delieveryd-removebg-preview.png" >
+        </div>
+    </section>
+    <section id="footer">
+        <div id="foot">
+            <h1>About Us</h1>
+            <p>We believe that great food should be both delicious and visually captivating. Our carefully <br>curated menu offers a variety of fresh, flavorful dishes designed to bring joy to your taste <br>buds. From hearty breakfasts to savory snacks and satisfying meals, we focus on creating an <br>inviting atmosphere where every plate is served with love and attention to detail. <br>Whether you’re enjoying a quick bite or a leisurely meal, we promise a dining experience <br>that’s as beautiful as it is delicious!</p>
+            <img src="phone-removebg-preview.png" id="phone"><font id="num">+923123765430</font><br>
+            <img src="envelop-removebg-preview.png" id="envelope"><font id="email">prettyplates@gmail.com</font>
+            <p id="copy">&copy; 2024 PrettyPlates</p>
+        </div>
+    </section>
+</body>
+<script>
+    function toggleMode() {
+      const body = document.body;
+      const switchElement = document.querySelector('.switch');
+
+      if (switchElement.classList.toggle('active')) {
+        body.style.backgroundColor = 'black';
+        body.style.color = 'white';
+      } else {
+        body.style.backgroundColor = 'white';
+        body.style.color = 'black';
+      }
+    }
+  </script>
+</html>

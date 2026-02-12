@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Augmentation Controller</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+     <header>
+        <nav id="nav">
+            <h2 id="nazi">NAZINDA</h2>
+            <ul class="links">
+                <li id="home"><a href="index.html#hero">HOME</a></li>
+                <li id="about-me"><a href="index.html#about">ABOUT ME</a></li>
+                <li id="projects"><a href="index.html#project">PROJECTS</a></li>
+                <li id="contacts"><a href="index.html#contact">CONTACT</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="to-do-explain">
+        <a href="index.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <div class="to-do-main">
+            <div class="to-do-detail">
+                <h1>Adaptive Augmentation Controller (ACC):</h1>
+                <p>The Adaptive Augmentation Controller (AAC) is a feature-aware extension 
+                    of Latent Generative Time-Series Augmentation (L-GTA) designed to improve 
+                    forecasting performance on complex and heterogeneous time-series data, 
+                    particularly in tourism demand forecasting. Unlike traditional augmentation 
+                    methods that apply fixed transformations, AAC dynamically adjusts augmentation 
+                    strength and type based on statistical characteristics of each time series, 
+                    such as trend, variance, skewness, and seasonality. Built on a Conditional 
+                    Variational Autoencoder (CVAE) backbone, the system generates high-quality 
+                    synthetic sequences in latent space while an adaptive controller selects 
+                    suitable transformations (scaling, shifting, noise, rotation) during training. 
+                    Experimental results across tourism, retail (M5), and crime datasets show that 
+                    AAC improves forecasting accuracy, robustness, and stability compared to static 
+                    augmentation and standard generative models.</p>
+                    <h2>Lanuages</h2>
+                    <ul>
+                        <li>Python</li>
+                        <li>PyTorch / TensorFlow (CVAE, GRU-based models)</li>
+                        <li>GRU-based sequence encoder–decoder</li>
+                    </ul>
+            </div>
+            <div class="image">
+                <!-- <img src="Picture2.png"> -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
