@@ -173,7 +173,7 @@ body {
     padding: 0.9rem 1.2rem;
     border-radius: 20px;
     font-size: 18px;
-    white-space: nowrap;
+    white-space: normal;
     color: white;
     font-family: 'Poiret One', sans-serif;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -618,6 +618,7 @@ i {
         height: 500px; 
         max-width: 100px;
     }
+
 }
 
 @media (max-width: 768px) {
