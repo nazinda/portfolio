@@ -227,8 +227,8 @@ body {
     flex-direction: column;
     /* align-items: center; */
     justify-content: flex-start;
-    height: 450px;
-    max-width: 340px;
+    height: 460px;
+    max-width: 355px;
     margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 1.5rem 0.5rem;
@@ -358,6 +358,7 @@ body {
 
 .project-detail ul{
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     margin-top: 0.8rem;
 }
